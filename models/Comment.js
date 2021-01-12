@@ -35,7 +35,6 @@ Comment.init(
         key: 'id'
       }
     }
-    // columns will go hear
   },
   {
     sequelize,

@@ -24,7 +24,6 @@ router.post('/', (req, res) => {
       console.log(err);
       res.status(400).json(err);
     })
-
 });
 
 router.delete('/:id', (req, res) => {

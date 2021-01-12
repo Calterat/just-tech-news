@@ -29,12 +29,13 @@ Post.hasMany(Vote, { foreignKey: 'post_id' });
 Vote.belongsTo(Post, { foreignKey: 'post_id' });
 
 // create association of One User to Many Comments
+User.hasMany(Comment, { foreignKey: 'user_id' });
 Comment.belongsTo(User, { foreignKey: 'user_id' });
-User.hasMany(User, { foreignKey: 'user_id' });
 
 // create association of One Post to Many Comments
-Comment.belongsTo (Post, { foreignKey: 'post_id' });
-Post.hasMany(Post, { foreignKey: 'post_id' });
+Post.hasMany(Comment, { foreignKey: 'post_id' });
+Comment.belongsTo(Post, { foreignKey: 'post_id' });
+
 
 
 
