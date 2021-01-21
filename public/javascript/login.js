@@ -39,7 +39,7 @@ const loginFormHandler = async (event) => {
     })
 
     // check the response status
-    if (response.ok) document.location.replace('/');
+    if (response.ok) document.location.replace('/dashboard');
     else alert(response.statusText);
   };
 };
